@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VehicleStatus",
+  "type": "object",
+  "required": ["vehicle_id", "lat", "lon", "timestamp"],
+  "properties": {
+    "vehicle_id": {"type": "string"},
+    "lat": {"type": "number"},
+    "lon": {"type": "number"},
+    "speed_kmh": {"type": "number"},
+    "bearing": {"type": "number"},
+    "segment_id": {"type": "string"},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}
